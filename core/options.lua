@@ -55,9 +55,6 @@ local Skins = {
 	["RecountSkin"] = {
 		["addon"] = "Recount",
 	},
-	["ReforgenatorSkin"] = {
-		["addon"] = "Reforgenator",
-	},
 	["SkadaSkin"] = {
 		["addon"] = "Skada",
 	},
@@ -87,10 +84,6 @@ local Skins = {
 	["ZygorSkin"] = {
 		["buttonText"] = "Zygor",
 		["addon"] = "ZygorGuidesViewer",
-	},
-	["PetBattleTeamsSkin"] = {
-		["buttonText"] = "PetBattleTeams",
-		["addon"] = "PetBattleTeams",
 	},
 }
 
