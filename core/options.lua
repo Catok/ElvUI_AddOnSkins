@@ -7,45 +7,72 @@ local Skins = {
 	},
 	["AtlasLootSkin"] = {
 		["buttonText"] = "AtlasLoot",
-		["addon"] = "AtlasLoot_Loader"
+		["addon"] = "AtlasLoot_Loader",
 	},
 	["AuctionatorSkin"] = {
-		["addon"] = "Auctionator"
+		["addon"] = "Auctionator",
+	},
+	["AuctionLiteSkin"] = {
+		["addon"] = "AuctionLite",
+	},
+	["BigWigsSkin"] = {
+		["addon"] = "BigWigs",
 	},
 	["BPTSkin"] = {
 		["buttonText"] = "Balance Power Tracker",
 		["addon"] = "BalancePowerTracker"
 	},
-	["BigWigsSkin"] = {
-		["addon"] = "BigWigs"
-	},
 	["CliqueSkin"] = {
-		["addon"] = "Clique"
+		["addon"] = "Clique",
+	},
+	["CritlineSkin"] = {
+		["addon"] = "Critline",
 	},
 	["FactionizerSkin"] = {
-		["addon"] = "Factionizer"
+		["addon"] = "Factionizer",
+	},
+	["InspectEquipSkin"] = {
+		["addon"] = "InspectEquip",
+	},
+	["NumerationSkin"] = {
+		["addon"] = "Numeration",
 	},
 	["OmenSkin"] = {
-		["addon"] = "Omen"
+		["addon"] = "Omen",
 	},
 	["QuartzSkin"] = {
-		["addon"] = "Quartz"
+		["addon"] = "Quartz",
+	},
+	["QuestCompletistSkin"] = {
+		["addon"] = "QuestCompletist",
+	},
+	["QuestItemBarSkin"] = {
+		["addon"] = "QuestItemBar",
+	},
+	["RavenSkin"] = {
+		["addon"] = "Raven",
 	},
 	["RecountSkin"] = {
-		["addon"] = "Recount"
+		["addon"] = "Recount",
 	},
 	["ReforgenatorSkin"] = {
-		["addon"] = "Reforgenator"
+		["addon"] = "Reforgenator",
 	},
 	["SkadaSkin"] = {
-		["addon"] = "Skada"
+		["addon"] = "Skada",
 	},
 	["SwatterSkin"] = {
 		["buttonText"] = "Swatter",
-		["addon"] = "!Swatter"
+		["addon"] = "!Swatter",
 	},
 	["TellMeWhenSkin"] = {
-		["addon"] = "TellMeWhen"
+		["addon"] = "TellMeWhen",
+	},
+	["TomTomSkin"] = {
+		["addon"] = "TomTom",
+	},
+	["VengeanceStatusSkin"] = {
+		["addon"] = "VengeanceStatus",
 	},
 	["WeakAurasSkin"] = {
 		["addon"] = "WeakAuras",
@@ -55,21 +82,15 @@ local Skins = {
 		["addon"] = "Wholly",
 	},
 	["WowLuaSkin"] = {
-		["addon"] = "WowLua"
+		["addon"] = "WowLua",
 	},
 	["ZygorSkin"] = {
 		["buttonText"] = "Zygor",
-		["addon"] = "ZygorGuidesViewer"
+		["addon"] = "ZygorGuidesViewer",
 	},
 	["PetBattleTeamsSkin"] = {
 		["buttonText"] = "PetBattleTeams",
-		["addon"] = "PetBattleTeams"
-	},
-	["VengeanceStatusSkin"] = {
-		["addon"] = "VengeanceStatus",
-	},
-	["TomTomSkin"] = {
-		["addon"] = "TomTom",
+		["addon"] = "PetBattleTeams",
 	},
 }
 
@@ -216,6 +237,13 @@ function AS:GenerateOptions()
 						desc = L['TOGGLESKIN_DESC'],
 						order = 11,
 						disabled = function() return not IsAddOnLoaded("SexyCooldown2") end,
+					},
+					EmbedCoolLine = {
+						type = 'toggle',
+						name = 'Attach CoolLine to action bar',
+						desc = L['TOGGLESKIN_DESC'],
+						order = 12,
+						disabled = function() return not IsAddOnLoaded("CoolLine") end,
 					},
 				}
 			}
