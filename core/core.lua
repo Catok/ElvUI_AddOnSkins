@@ -152,7 +152,6 @@ function AS:SkinFrameD(frame, override)
 end
 
 function AS:SkinStatusBar(bar, ClassColor)
-	bar:StripTextures(true)
 	bar:SetStatusBarTexture(LSM:Fetch("statusbar",E.private.general.normTex))
 	if ClassColor then
 		bar:CreateBackdrop("ClassColor")

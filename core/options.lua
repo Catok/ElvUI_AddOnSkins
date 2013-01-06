@@ -71,10 +71,6 @@ local Skins = {
 	["VengeanceStatusSkin"] = {
 		["addon"] = "VengeanceStatus",
 	},
-	["WeakAurasSkin"] = {
-		["addon"] = "WeakAuras",
-		["ui"] = "ElvUI",
-	},
 	["WhollySkin"] = {
 		["addon"] = "Wholly",
 	},
@@ -84,6 +80,11 @@ local Skins = {
 	["ZygorSkin"] = {
 		["buttonText"] = "Zygor",
 		["addon"] = "ZygorGuidesViewer",
+	},
+	["WeakAurasSkin"] = {
+		["buttonText"] = "WeakAuras Icons",
+		["addon"] = "WeakAuras",
+		["ui"] = "ElvUI",
 	},
 }
 
@@ -176,12 +177,6 @@ function AS:GenerateOptions()
 						type = 'description',
 						name = 'Settings to control addons embedded in right chat panel',
 						order = 1
-					},
-					EmbedRight = {
-						type = 'toggle',
-						name = 'Embed to Right Chat Panel',
-						desc = 'Embed to right chat panel, otherwise left chat panel',
-						order = 2
 					},
 					EmbedRecount = {
 						type = 'toggle',
